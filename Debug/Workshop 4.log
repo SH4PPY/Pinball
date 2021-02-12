@@ -1,22 +1,11 @@
-﻿Build started 07/08/2015 15:14:19.
-     1>Project "E:\Google Drive\Portfolio\SHA12307610 CGP3001M Assessment Item 1\SHA12307610 CGP3001M Assessment Item 1\Workshop 4.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Google Drive\Portfolio\SHA12307610 CGP3001M Assessment Item 1\SHA12307610 CGP3001M Assessment Item 1\Debug\Workshop 4.exe" /NOLOGO /LIBPATH:"C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\3.3.1\\Lib\win32" /LIBPATH:.\Graphics\lib\win32\glut PhysX3DEBUG_x86.lib PhysX3CommonDEBUG_x86.lib PhysX3ExtensionsDEBUG.lib PhysXVisualDebuggerSDKDEBUG.lib PhysX3CookingDEBUG_x86.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMTD /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\Google Drive\Portfolio\SHA12307610 CGP3001M Assessment Item 1\SHA12307610 CGP3001M Assessment Item 1\Debug\Workshop 4.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Google Drive\Portfolio\SHA12307610 CGP3001M Assessment Item 1\SHA12307610 CGP3001M Assessment Item 1\Debug\Workshop 4.lib" /MACHINE:X86 /SAFESEH:NO Debug\PhysicsEngine.obj
-         Debug\VisualDebugger.obj
-         Debug\Camera.obj
-         Debug\GLFontRenderer.obj
-         Debug\Renderer.obj
-         "Debug\Workshop 4.obj"
-     1>PhysX3ExtensionsDEBUG.lib(ExtDefaultErrorCallback.obj) : error LNK2019: unresolved external symbol _sprintf referenced in function "public: virtual void __thiscall physx::PxDefaultErrorCallback::reportError(enum physx::PxErrorCode::Enum,char const *,char const *,int)" (?reportError@PxDefaultErrorCallback@physx@@UAEXW4Enum@PxErrorCode@2@PBD1H@Z)
-     1>PhysX3ExtensionsDEBUG.lib(ExtDefaultCpuDispatcher.obj) : error LNK2019: unresolved external symbol _vsprintf_s referenced in function "int __cdecl physx::string::sprintf_s(char *,unsigned int,char const *,...)" (?sprintf_s@string@physx@@YAHPADIPBDZZ)
-     1>PhysXVisualDebuggerSDKDEBUG.lib(PvdNetworkStreams.obj) : error LNK2001: unresolved external symbol "public: char const * __thiscall type_info::name(struct __type_info_node *)const " (?name@type_info@@QBEPBDPAU__type_info_node@@@Z)
-     1>PhysX3ExtensionsDEBUG.lib(ExtDefaultCpuDispatcher.obj) : error LNK2001: unresolved external symbol "public: char const * __thiscall type_info::name(struct __type_info_node *)const " (?name@type_info@@QBEPBDPAU__type_info_node@@@Z)
-     1>PhysX3ExtensionsDEBUG.lib(ExtDistanceJoint.obj) : error LNK2001: unresolved external symbol "public: char const * __thiscall type_info::name(struct __type_info_node *)const " (?name@type_info@@QBEPBDPAU__type_info_node@@@Z)
-     1>PhysX3ExtensionsDEBUG.lib(ExtRevoluteJoint.obj) : error LNK2001: unresolved external symbol "public: char const * __thiscall type_info::name(struct __type_info_node *)const " (?name@type_info@@QBEPBDPAU__type_info_node@@@Z)
-     1>PhysX3ExtensionsDEBUG.lib(ExtCpuWorkerThread.obj) : error LNK2001: unresolved external symbol "public: char const * __thiscall type_info::name(struct __type_info_node *)const " (?name@type_info@@QBEPBDPAU__type_info_node@@@Z)
-     1>E:\Google Drive\Portfolio\SHA12307610 CGP3001M Assessment Item 1\SHA12307610 CGP3001M Assessment Item 1\Debug\Workshop 4.exe : fatal error LNK1120: 3 unresolved externals
-     1>Done Building Project "E:\Google Drive\Portfolio\SHA12307610 CGP3001M Assessment Item 1\SHA12307610 CGP3001M Assessment Item 1\Workshop 4.vcxproj" (Build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:00.57
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  Renderer.cpp
+D:\Documents\GitHub\Pinball\Extras\Renderer.h(3,10): fatal error C1083: Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+  GLFontRenderer.cpp
+  Camera.cpp
+D:\Documents\GitHub\Pinball\Extras\Camera.h(3,10): fatal error C1083: Cannot open include file: 'foundation/PxTransform.h': No such file or directory
+  VisualDebugger.cpp
+D:\Documents\GitHub\Pinball\PhysicsEngine.h(4,10): fatal error C1083: Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+  PhysicsEngine.cpp
+D:\Documents\GitHub\Pinball\PhysicsEngine.h(4,10): fatal error C1083: Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+  Generating Code...

@@ -7,7 +7,7 @@ int main()
 {
 	try 
 	{ 
-		VisualDebugger::Init("Workshop 4", 1350, 690); 
+		VisualDebugger::Init("Workshop 4", 1920, 1080); 
 	}
 	catch (Exception exc) 
 	{ 
